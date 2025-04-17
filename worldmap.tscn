@@ -1,6 +1,6 @@
-[gd_scene load_steps=11 format=4 uid="uid://cb6vh3470sj4i"]
+[gd_scene load_steps=11 format=3 uid="uid://cb6vh3470sj4i"]
 
-[ext_resource type="Script" uid="uid://c71uspgdn0p0c" path="res://worldmap.gd" id="1"]
+[ext_resource type="Script" uid="uid://b1mjyw2c0ogx3" path="res://worldmap.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://qjg4gx2nqeh0" path="res://worldmap.png" id="2"]
 [ext_resource type="FontFile" uid="uid://cvvi6o8v4r7dh" path="res://ariblk.ttf" id="3"]
 [ext_resource type="AudioStream" uid="uid://daax0sm4wiefg" path="res://uihover.wav" id="4"]
@@ -119,6 +119,36 @@ text = "Egypt"
 alignment = 0
 metadata/_edit_use_anchors_ = true
 
+[node name="env" type="Button" parent="Worldmap"]
+offset_left = -302.0
+offset_top = -112.0
+offset_right = -219.0
+offset_bottom = -94.0
+rotation = -0.785398
+scale = Vector2(1.76892, 1.76892)
+theme = SubResource("Theme_w4oin")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4g60y")
+disabled = true
+text = "Environment"
+alignment = 0
+metadata/_edit_use_anchors_ = true
+
 [node name="return" type="Button" parent="Worldmap"]
 offset_left = -304.0
 offset_top = 208.0
@@ -144,6 +174,37 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_4g60y")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_4g60y")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_4g60y")
 text = "Back to main menu"
+alignment = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="cheat" type="Button" parent="Worldmap"]
+anchors_preset = -1
+anchor_left = 0.0484375
+anchor_right = 0.0078125
+offset_left = 143.0
+offset_top = -234.0
+offset_right = 289.0
+offset_bottom = -216.0
+scale = Vector2(1.20892, 1.20892)
+theme = SubResource("Theme_w4oin")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_4g60y")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4g60y")
+text = "Unlock Next Level"
 alignment = 0
 metadata/_edit_use_anchors_ = true
 
@@ -206,6 +267,12 @@ visible = false
 position = Vector2(8, -128)
 texture = ExtResource("7")
 
+[node name="Yes4" type="Sprite2D" parent="Worldmap"]
+visible = false
+position = Vector2(-173, -217)
+rotation = -0.785398
+texture = ExtResource("7")
+
 [connection signal="button_down" from="Worldmap/swe" to="." method="_on_swe_button_down"]
 [connection signal="mouse_entered" from="Worldmap/swe" to="." method="_on_swe_mouse_entered"]
 [connection signal="pressed" from="Worldmap/swe" to="." method="_on_swe_pressed"]
@@ -215,9 +282,15 @@ texture = ExtResource("7")
 [connection signal="button_down" from="Worldmap/egy" to="." method="_on_egy_button_down"]
 [connection signal="mouse_entered" from="Worldmap/egy" to="." method="_on_egy_mouse_entered"]
 [connection signal="pressed" from="Worldmap/egy" to="." method="_on_egy_pressed"]
+[connection signal="button_down" from="Worldmap/env" to="." method="_on_env_button_down"]
+[connection signal="mouse_entered" from="Worldmap/env" to="." method="_on_env_mouse_entered"]
+[connection signal="pressed" from="Worldmap/env" to="." method="_on_env_pressed"]
 [connection signal="button_down" from="Worldmap/return" to="." method="_on_return_button_down"]
 [connection signal="mouse_entered" from="Worldmap/return" to="." method="_on_return_mouse_entered"]
 [connection signal="pressed" from="Worldmap/return" to="." method="_on_return_pressed"]
+[connection signal="button_down" from="Worldmap/cheat" to="." method="_on_cheat_button_down"]
+[connection signal="mouse_entered" from="Worldmap/cheat" to="." method="_on_cheat_mouse_entered"]
+[connection signal="pressed" from="Worldmap/cheat" to="." method="_on_cheat_pressed"]
 [connection signal="button_down" from="Worldmap/return2" to="." method="_on_return_2_button_down"]
 [connection signal="mouse_entered" from="Worldmap/return2" to="." method="_on_return_2_mouse_entered"]
 [connection signal="pressed" from="Worldmap/return2" to="." method="_on_return_2_pressed"]

@@ -1,6 +1,6 @@
-[gd_scene load_steps=14 format=4 uid="uid://dwa0bvxbkhi26"]
+[gd_scene load_steps=14 format=3 uid="uid://dwa0bvxbkhi26"]
 
-[ext_resource type="Script" uid="uid://bq1ie4cg0fac4" path="res://egypt.gd" id="1"]
+[ext_resource type="Script" uid="uid://bx1yb0nnop75l" path="res://egypt.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://c2ft3k35qc07v" path="res://egypt3.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://de0i0253ave7d" path="res://redsand.png" id="3"]
 [ext_resource type="PackedScene" uid="uid://bfllceqgmkr8f" path="res://characternode.tscn" id="4"]
@@ -12,7 +12,7 @@
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_7b2gm"]
 panorama = ExtResource("2")
-energy_multiplier = 2.5199999809265137
+energy_multiplier = 2.52
 
 [sub_resource type="Sky" id="Sky_wetts"]
 sky_material = SubResource("PanoramaSkyMaterial_7b2gm")
@@ -21,20 +21,20 @@ sky_material = SubResource("PanoramaSkyMaterial_7b2gm")
 background_mode = 2
 background_color = Color(1, 1, 1, 1)
 sky = SubResource("Sky_wetts")
-sky_custom_fov = 76.0999984741211
+sky_custom_fov = 76.1
 sky_rotation = Vector3(0.125664, -0.0523599, 0)
 ambient_light_source = 3
 ambient_light_color = Color(1, 1, 1, 1)
 ambient_light_energy = 4.0
 ssao_enabled = true
 ssao_radius = 1.75
-ssao_intensity = 14.949999809265137
-ssil_intensity = 10.270000457763672
+ssao_intensity = 14.95
+ssil_intensity = 10.27
 sdfgi_enabled = true
 fog_enabled = true
 fog_light_color = Color(1, 0.454902, 0.211765, 1)
-fog_light_energy = 1.2999999523162842
-fog_sky_affect = 0.18199999630451202
+fog_light_energy = 1.3
+fog_sky_affect = 0.182
 volumetric_fog_emission = Color(1, 1, 1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ompuh"]

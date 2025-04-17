@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=4 uid="uid://ds7i33h4tbjor"]
+[gd_scene load_steps=10 format=3 uid="uid://ds7i33h4tbjor"]
 
 [ext_resource type="PackedScene" uid="uid://d8gnmkghjw4y" path="res://playernode.tscn" id="1"]
+[ext_resource type="Script" uid="uid://brap7hvkynidb" path="res://environment.gd" id="1_g4tgr"]
 [ext_resource type="Texture2D" uid="uid://cy88tnl4bbvmt" path="res://sheep_generated-image-348261704.jpg" id="2"]
 [ext_resource type="Texture2D" uid="uid://b8e7p8gybl8ty" path="res://games.jpg" id="3"]
 [ext_resource type="PackedScene" uid="uid://bfllceqgmkr8f" path="res://characternode.tscn" id="4"]
@@ -15,20 +16,21 @@ process_mode = 1
 [sub_resource type="Environment" id="Environment_0dwx2"]
 background_mode = 2
 background_color = Color(1, 1, 1, 1)
-background_energy_multiplier = 0.6499999761581421
+background_energy_multiplier = 0.65
 sky = SubResource("Sky_wetts")
 ambient_light_source = 3
 ambient_light_color = Color(1, 1, 1, 1)
 ambient_light_energy = 4.0
 ssao_enabled = true
 ssao_radius = 1.75
-ssao_intensity = 14.949999809265137
+ssao_intensity = 14.95
 sdfgi_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_00014"]
 albedo_texture = ExtResource("3")
 
 [node name="Node3D" type="Node3D"]
+script = ExtResource("1_g4tgr")
 
 [node name="Node3D" parent="." instance=ExtResource("1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.29886, 1.03263, 14.0134)

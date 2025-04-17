@@ -1,1 +1,12 @@
 res://default_bus_layout.tres
+res://worldmap.tscn
+res://worldmap.gd
+res://menu.tscn
+res://environment.tscn
+res://egypt.gd
+res://environment.gd
+res://vehicle_body_3d.gd
+res://egypt.tscn
+res://characternode.tscn
+res://freecam.tscn
+res://playernode.tscn
