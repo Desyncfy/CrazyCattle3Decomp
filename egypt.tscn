@@ -468,8 +468,8 @@ transform = Transform3D(0.928953, -0.000639924, -0.370198, -0.000457291, 0.99999
 [node name="Node3D" parent="." instance=ExtResource("5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.1371, 0.529594, -8.19333)
 
-[node name="fencircular2" parent="." instance=ExtResource("6_8hsab")]
-transform = Transform3D(4.15097, 0, 0, 0, 3.49015, 0, 0, 0, 4.15097, -8.26722, 2.39774, -48.6839)
+[node name="Fencircular" parent="." instance=ExtResource("6_8hsab")]
+transform = Transform3D(4.151, 0, 0, 0, 3.49, 0, 0, 0, 4.151, -8.267, 2.398, -48.684)
 
 [node name="World2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7")
