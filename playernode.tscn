@@ -344,7 +344,7 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("9")
 theme_override_font_sizes/normal_font_size = 12
 bbcode_enabled = true
-text = "CrazyCattle3D (Desync Version) 1.0.1d"
+text = "CrazyCattle3D (Desync Version) 1.0.1a-d"
 
 [node name="Bleat" type="AudioStreamPlayer3D" parent="VehicleBody3D"]
 stream = ExtResource("11")

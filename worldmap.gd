@@ -14,6 +14,7 @@ func saveprogress():
 		data.fullscreen = false
 	print("Saved")
 	ResourceSaver.save(data, "user://savefile.tres")
+	print(OS.get_data_dir())
 
 func updateUnlocks():
 	if Global.unlockedlevels >= 1:
@@ -127,6 +128,7 @@ func _on_cheat_pressed() -> void:
 	Global.unlockedlevels = 4
 	Global.beatenlevels = 5
 	saveprogress()
+	get_tree().reload_current_scene()
 
 
 func _on_cheat_mouse_entered() -> void:

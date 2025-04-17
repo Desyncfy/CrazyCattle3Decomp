@@ -204,7 +204,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_4g60y")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_4g60y")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_4g60y")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_4g60y")
-text = "Unlock Next Level"
+text = "Unlock All Levels"
 alignment = 0
 metadata/_edit_use_anchors_ = true
 
