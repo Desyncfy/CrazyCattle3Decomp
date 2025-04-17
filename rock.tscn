@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://buww22umukosn"]
+
+[ext_resource type="PackedScene" uid="uid://rv81fpjxeece" path="res://rock.glb" id="1_o0qsl"]
+[ext_resource type="ArrayMesh" uid="uid://bj5bm5qyvvrbo" path="res://recovered_meshes/rock.tres" id="2_68h2w"]
+
+[node name="rock" instance=ExtResource("1_o0qsl")]
+
+[node name="Cube" parent="." index="0"]
+mesh = ExtResource("2_68h2w")

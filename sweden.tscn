@@ -1,6 +1,6 @@
-[gd_scene load_steps=12 format=4 uid="uid://bgyia7jid0gmm"]
+[gd_scene load_steps=12 format=3 uid="uid://bgyia7jid0gmm"]
 
-[ext_resource type="Script" uid="uid://dy2cpu34j1tl8" path="res://sweden.gd" id="1"]
+[ext_resource type="Script" uid="uid://d0gvdxf5gvag6" path="res://sweden.gd" id="1"]
 [ext_resource type="AudioStream" uid="uid://ck4al0cy4vn3v" path="res://world3.wav" id="2"]
 [ext_resource type="Texture2D" uid="uid://cgw7g6g7xhcla" path="res://tundra.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://b1mi45y3fjkot" path="res://snow.png" id="4"]
@@ -10,7 +10,7 @@
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_7b2gm"]
 panorama = ExtResource("3")
-energy_multiplier = 2.0899999141693115
+energy_multiplier = 2.09
 
 [sub_resource type="Sky" id="Sky_wetts"]
 sky_material = SubResource("PanoramaSkyMaterial_7b2gm")
@@ -18,20 +18,20 @@ sky_material = SubResource("PanoramaSkyMaterial_7b2gm")
 [sub_resource type="Environment" id="Environment_0dwx2"]
 background_mode = 2
 background_color = Color(1, 1, 1, 1)
-background_energy_multiplier = 0.6499999761581421
+background_energy_multiplier = 0.65
 sky = SubResource("Sky_wetts")
-sky_custom_fov = 76.0999984741211
+sky_custom_fov = 76.1
 ambient_light_source = 3
 ambient_light_color = Color(1, 1, 1, 1)
 ambient_light_energy = 4.0
 ssao_enabled = true
 ssao_radius = 1.75
-ssao_intensity = 14.949999809265137
-ssil_intensity = 10.270000457763672
+ssao_intensity = 14.95
+ssil_intensity = 10.27
 sdfgi_enabled = true
 fog_enabled = true
 fog_light_color = Color(0.760784, 0.878431, 0.984314, 1)
-fog_density = 0.016599999740719795
+fog_density = 0.0166
 fog_sky_affect = 0.0
 volumetric_fog_emission = Color(1, 1, 1, 1)
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgffx6tfb8ekx"
 path.s3tc="res://.godot/imported/stonehouse_free-photo-of-stone-farmhouse-in-yorkshire-dales-landscape.jpg-66d7928d1413bd2ffbf7e8bdf081e1be.s3tc.ctex"
+path.etc2="res://.godot/imported/stonehouse_free-photo-of-stone-farmhouse-in-yorkshire-dales-landscape.jpg-66d7928d1413bd2ffbf7e8bdf081e1be.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://stonehouse_free-photo-of-stone-farmhouse-in-yorkshire-dales-landscape.jpg"
-dest_files=["res://.godot/imported/stonehouse_free-photo-of-stone-farmhouse-in-yorkshire-dales-landscape.jpg-66d7928d1413bd2ffbf7e8bdf081e1be.s3tc.ctex"]
+dest_files=["res://.godot/imported/stonehouse_free-photo-of-stone-farmhouse-in-yorkshire-dales-landscape.jpg-66d7928d1413bd2ffbf7e8bdf081e1be.s3tc.ctex", "res://.godot/imported/stonehouse_free-photo-of-stone-farmhouse-in-yorkshire-dales-landscape.jpg-66d7928d1413bd2ffbf7e8bdf081e1be.etc2.ctex"]
 
 [params]
 

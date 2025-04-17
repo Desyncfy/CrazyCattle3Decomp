@@ -1,0 +1,43 @@
+[gd_resource type="ArrayMesh" load_steps=4 format=4 uid="uid://cndtjofvsh82d"]
+
+[ext_resource type="Texture2D" uid="uid://bgffx6tfb8ekx" path="res://stonehouse_free-photo-of-stone-farmhouse-in-yorkshire-dales-landscape.jpg" id="1_d0ypm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5i5h7"]
+resource_name = "Material"
+cull_mode = 2
+albedo_texture = ExtResource("1_d0ypm")
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_a8scs"]
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 3.7082, 2.86941, 2),
+"format": 34896613377,
+"index_count": 60,
+"index_data": PackedByteArray("AAAGAAIAAwACAAYAAAAHAAYAAQADAAYAAQAGAAcACAADAAEAAwAIAAIACQABAAcACQAHAAAACAABAAkABAAJAAAACAAKAAIABQAIAAkACAAFAAoABQAJAAQACwACAAoABQALAAoACwAAAAIABQAEAAsABAAAAAsA"),
+"lods": [0.666336, PackedByteArray("AAABAAIAAQADAAIABAABAAAAAwAFAAIABQADAAEABQABAAQAAAACAAUABQAEAAAA")],
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("//////9/AAD//wAA//8AAAAA////fwAAAAAAAP//AAD//wAAAAAAAAAAAAAAAAAAAABusv//AAD//26y//8AAAAAAAD/fwAA//8AAP9/AAAAAG6yAAAAAP//brIAAAAA")
+}]
+blend_shape_mode = 0
+
+[resource]
+resource_name = "stonehouse_Cube"
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 3.7082, 2.86941, 2),
+"attribute_data": PackedByteArray("8cscEAa0fPSAIjAargYW4oBrfpSAa36UgLd+lIC3fpTwBiTeqbW68wvK4xQcIuMYjt728+W43vVCzecUeOBi9Wy6/PbezG0UzgTBUZuzQkzOBMFRm7NCTEHN/O4buAFFPuHOSYBrfpSAt36UVsyY9B+6Nj1U3cA/krXnRa4G51GStedFrgbnUQ=="),
+"format": 34896613399,
+"index_count": 60,
+"index_data": PackedByteArray("AAASAAIAAAATABIAAQAUABUAAQADABQAFgAXABEAFgAQABcADwAWABEADwARABgAGQAGABoAGQAFAAYABAAZABoABAAaAAcAGwAcAA4AGwANABwADAAbAA4ADAAOAB0ACAAeAB8ACAAJAB4AIAALACEAIAAKAAsA"),
+"lods": [0.666336, PackedByteArray("AAABAAIAAQADAAIABAAFAAYABAAGAAcACAAJAAoACgALAAgADAANAA4ADwAQABEA")],
+"material": SubResource("StandardMaterial3D_5i5h7"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 34,
+"vertex_data": PackedByteArray("//////9/4KL//wAA//9igAAA////f++iAAAAAP//y4IAAAAAAAD/vwAAAAD///+///8AAP///7///wAAAAD/vwAAAAAAAAAA//8AAAAAAAD//////3/WIgAA////f9Ii//8AAAAAEsD//wAA////v///////fwfAAAAAAP///78AAAAAAAAUwAAA////fwfAAABusv//6qL//26y///dogAAbrL//7CB//9usv//t4AAAAAA/38EwAAAbrIAAEXAAABusv//l8AAAAAA/3//v///AAD/f/+///8AAP9/A8D//26y//+5wP//brIAAGrB//9usgAAAAAAAG6yAAAAAP//brIAANUiAABusgAA0CJe+GKC/////wD0wIP/////AAD/fwAA/38AAP9/AAD/f1P/U3/a+ySEK/5WfQX8NnoNhRwK3YC8ATh5YwPbgRD/unp19faGg/ww9WGDpvn7gf//////f/9/YYVO/QuS+PZ2c+3mAAD/fwAA/38Fe3wC0WSXDZyROSMF/viBHP0cfY79cnxw+115")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_a8scs")

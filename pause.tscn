@@ -1,6 +1,6 @@
-[gd_scene load_steps=10 format=4 uid="uid://em7larvq8lrm"]
+[gd_scene load_steps=10 format=3 uid="uid://em7larvq8lrm"]
 
-[ext_resource type="Script" uid="uid://ixn75p36tocg" path="res://pause.gd" id="1"]
+[ext_resource type="Script" uid="uid://cbe4as3ty25aq" path="res://pause.gd" id="1"]
 [ext_resource type="FontFile" uid="uid://dbj10iq6j0ahu" path="res://IMPACT.TTF" id="2"]
 [ext_resource type="FontFile" uid="uid://cvvi6o8v4r7dh" path="res://ariblk.ttf" id="3"]
 [ext_resource type="AudioStream" uid="uid://daax0sm4wiefg" path="res://uihover.wav" id="4"]
@@ -54,10 +54,10 @@ horizontal_alignment = 1
 texture_filter = 2
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.05781250074505806
-anchor_top = -0.06666669994592667
-anchor_right = 0.05781250074505806
-anchor_bottom = -0.06666669994592667
+anchor_left = 0.0578125
+anchor_top = -0.0666667
+anchor_right = 0.0578125
+anchor_bottom = -0.0666667
 offset_left = 192.0
 offset_top = 280.0
 offset_right = 272.0
@@ -89,10 +89,10 @@ metadata/_edit_use_anchors_ = true
 texture_filter = 2
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.05781250074505806
-anchor_top = 0.016666699200868607
-anchor_right = 0.05781250074505806
-anchor_bottom = 0.016666699200868607
+anchor_left = 0.0578125
+anchor_top = 0.0166667
+anchor_right = 0.0578125
+anchor_bottom = 0.0166667
 offset_left = 192.0
 offset_top = 280.0
 offset_right = 272.0
@@ -124,10 +124,10 @@ metadata/_edit_use_anchors_ = true
 texture_filter = 2
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.05000000074505806
-anchor_top = 0.10000000149011612
-anchor_right = 0.05624999850988388
-anchor_bottom = 0.10000000149011612
+anchor_left = 0.05
+anchor_top = 0.1
+anchor_right = 0.05625
+anchor_bottom = 0.1
 offset_left = 192.0
 offset_top = 280.0
 offset_right = 272.0

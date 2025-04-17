@@ -1,6 +1,6 @@
-[gd_scene load_steps=18 format=4 uid="uid://cf3n6c2t3dq4u"]
+[gd_scene load_steps=18 format=3 uid="uid://cf3n6c2t3dq4u"]
 
-[ext_resource type="Script" uid="uid://dpxrh31iebwo3" path="res://node_2d.gd" id="1"]
+[ext_resource type="Script" uid="uid://ky287ipwmj8d" path="res://node_2d.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://bc5e325gesis2" path="res://0.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://cq7iuyp6yu2nx" path="res://1.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://bscp50jjkgtan" path="res://2.png" id="4"]
@@ -15,7 +15,7 @@
 bg_color = Color(0, 0, 0, 1)
 
 [sub_resource type="Animation" id="Animation_dkrsm"]
-length = 0.0010000000474974513
+length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true

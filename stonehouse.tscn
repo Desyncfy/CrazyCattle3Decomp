@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dr23j21rftso6"]
+
+[ext_resource type="PackedScene" uid="uid://b7yjy8icijurg" path="res://stonehouse.glb" id="1_y13yj"]
+[ext_resource type="ArrayMesh" uid="uid://cndtjofvsh82d" path="res://recovered_meshes/stonehouse.tres" id="2_2jaqd"]
+
+[node name="stonehouse" instance=ExtResource("1_y13yj")]
+
+[node name="Cube" parent="." index="0"]
+mesh = ExtResource("2_2jaqd")

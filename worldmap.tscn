@@ -179,7 +179,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="cheat" type="Button" parent="Worldmap"]
 anchors_preset = -1
-anchor_left = 0.0484375
+anchor_left = 0.0078125
 anchor_right = 0.0078125
 offset_left = 143.0
 offset_top = -234.0

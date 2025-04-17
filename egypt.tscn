@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://de0i0253ave7d" path="res://redsand.png" id="3"]
 [ext_resource type="PackedScene" uid="uid://bfllceqgmkr8f" path="res://characternode.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://d8gnmkghjw4y" path="res://playernode.tscn" id="5"]
-[ext_resource type="PackedScene" uid="uid://7eeg8dy6gh1c" path="res://fencircular.glb" id="6"]
+[ext_resource type="PackedScene" uid="uid://bv6bdxeni35v8" path="res://fencircular.tscn" id="6_8hsab"]
 [ext_resource type="AudioStream" uid="uid://crsw0s6s6exhm" path="res://world2.wav" id="7"]
 [ext_resource type="PackedScene" uid="uid://bvs53nlflu6ht" path="res://pyramid.glb" id="8"]
 [ext_resource type="Texture2D" uid="uid://bgby244m6r4qs" path="res://palmtree.png" id="9"]
@@ -44,7 +44,7 @@ uv1_scale = Vector3(0.05, 0.05, 0.05)
 uv1_triplanar = true
 grow_amount = -16.0
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D2" type="Node3D"]
 script = ExtResource("1")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -468,9 +468,8 @@ transform = Transform3D(0.928953, -0.000639924, -0.370198, -0.000457291, 0.99999
 [node name="Node3D" parent="." instance=ExtResource("5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.1371, 0.529594, -8.19333)
 
-[node name="fencircular" parent="." instance=ExtResource("6")]
+[node name="fencircular2" parent="." instance=ExtResource("6_8hsab")]
 transform = Transform3D(4.15097, 0, 0, 0, 3.49015, 0, 0, 0, 4.15097, -8.26722, 2.39774, -48.6839)
-metadata/_edit_lock_ = true
 
 [node name="World2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7")

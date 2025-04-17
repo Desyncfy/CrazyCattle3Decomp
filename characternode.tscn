@@ -1,7 +1,7 @@
 [gd_scene load_steps=29 format=3 uid="uid://bfllceqgmkr8f"]
 
-[ext_resource type="PackedScene" uid="uid://crl0n3vt6mfwo" path="res://sheep.glb" id="1"]
-[ext_resource type="FontFile" uid="uid://cedabdtsijvhn" path="res://numbers/numbersheet.png" id="2"]
+[ext_resource type="PackedScene" uid="uid://bse3g5nj340ty" path="res://sheep.tscn" id="1_cu6n2"]
+[ext_resource type="FontFile" uid="uid://bvhj2w2tommwx" path="res://numbers/numbers.tres" id="2_idw84"]
 [ext_resource type="Script" uid="uid://cmqa83ogxc7d7" path="res://label_3d.gd" id="3"]
 [ext_resource type="AudioStream" uid="uid://cw2w314pg1hqh" path="res://explode.wav" id="4"]
 [ext_resource type="Texture2D" uid="uid://h0ju080swc63" path="res://explosion-Sheet.png" id="5"]
@@ -215,14 +215,14 @@ animations = [{
 "speed": 20.0
 }]
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D2" type="Node3D"]
 script = SubResource("GDScript_ol8a7")
 
 [node name="VehicleBody3D" type="VehicleBody3D" parent="."]
 mass = 30.0
 script = SubResource("GDScript_q5qcx")
 
-[node name="sheep" parent="VehicleBody3D" instance=ExtResource("1")]
+[node name="sheep" parent="VehicleBody3D" instance=ExtResource("1_cu6n2")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.0158744, -0.521821, 0.932096)
 
 [node name="Label3D" type="Label3D" parent="VehicleBody3D/sheep"]
@@ -231,7 +231,7 @@ pixel_size = 0.016
 shaded = true
 modulate = Color(0.180575, 1, 0.99993, 1)
 text = "52"
-font = ExtResource("2")
+font = ExtResource("2_idw84")
 script = ExtResource("3")
 
 [node name="Label3D2" type="Label3D" parent="VehicleBody3D/sheep/Label3D"]
@@ -240,7 +240,7 @@ pixel_size = 0.016
 shaded = true
 modulate = Color(0.180575, 1, 0.99993, 1)
 text = "52"
-font = ExtResource("2")
+font = ExtResource("2_idw84")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="VehicleBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.164907, -0.111954)
