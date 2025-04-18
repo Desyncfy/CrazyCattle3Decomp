@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://d8gnmkghjw4y"]
+[gd_scene load_steps=35 format=3 uid="uid://d8gnmkghjw4y"]
 
 [ext_resource type="Script" uid="uid://cchne6rclx2ur" path="res://vehicle_body_3d.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://bsqs54jqh5rv2" path="res://freecam.tscn" id="2"]
@@ -11,6 +11,7 @@
 [ext_resource type="FontFile" uid="uid://cvvi6o8v4r7dh" path="res://ariblk.ttf" id="9"]
 [ext_resource type="Script" uid="uid://dry41lsev4vm1" path="res://rich_text_label_4.gd" id="10"]
 [ext_resource type="AudioStream" uid="uid://dvtte0lvio6u0" path="res://baa.wav" id="11"]
+[ext_resource type="Script" uid="uid://nvxrmwbkcv68" path="res://info.gd" id="11_d13o4"]
 [ext_resource type="PackedScene" uid="uid://em7larvq8lrm" path="res://pause.tscn" id="12"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mckr2"]
@@ -344,7 +345,8 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("9")
 theme_override_font_sizes/normal_font_size = 12
 bbcode_enabled = true
-text = "CrazyCattle3D (Desync Version) 1.0.1b-d"
+text = "CrazyCattle3D (Desync Version) 1.0.1d-d"
+script = ExtResource("11_d13o4")
 
 [node name="Bleat" type="AudioStreamPlayer3D" parent="VehicleBody3D"]
 stream = ExtResource("11")

@@ -10,3 +10,5 @@ class_name SaveData
 @export var mastervol: float
 @export var musicvol: float
 @export var fullscreen: bool
+@export var debug: int
+@export var vanilla: int

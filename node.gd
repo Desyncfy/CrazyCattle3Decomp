@@ -7,9 +7,11 @@ func initialise_game():
 		var data = SaveData.new()
 		data.savename = "Nardo Polo"
 		data.saveunlockedlevels = 1
-		data.mastervol = 0
+		data.mastervol = 70
 		data.musicvol = 0
 		data.beatenlevels = 0
+		data.debug = 0
+		data.vanilla = 0
 		ResourceSaver.save(data, "user://savefile.tres")
 		print("Savefile not found; Initialising")
 
@@ -21,6 +23,8 @@ func loadData():
 	Global.unlockedlevels = data.saveunlockedlevels
 	Global.playername = data.savename
 	Global.beatenlevels = data.beatenlevels
+	Global.debug = data.debug
+	Global.vanilla = data.vanilla
 	AudioServer.set_bus_volume_db(0, data.mastervol)
 	AudioServer.set_bus_volume_db(1, data.musicvol)
 	if data.fullscreen == true:

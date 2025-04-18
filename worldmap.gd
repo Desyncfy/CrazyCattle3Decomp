@@ -1,5 +1,7 @@
 extends Node2D
 
+
+
 # Used for cheat button
 func saveprogress():
 	var data = SaveData.new()
@@ -57,6 +59,9 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	updateUnlocks()
 	updateUIticks()
+	if Global.vanilla:
+		$Worldmap / env.hide()
+		$Worldmap / cheat.hide()
 
 func _on_return_2_pressed() -> void :
 	$Worldmap / Uirelease.play()

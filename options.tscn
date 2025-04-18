@@ -76,7 +76,7 @@ theme_override_fonts/font = ExtResource("3")
 theme_override_font_sizes/font_size = 12
 theme_override_styles/focus = SubResource("StyleBoxFlat_vmi34")
 theme_override_styles/normal = SubResource("StyleBoxFlat_p8250")
-text = "u"
+text = "Nardo Polo"
 placeholder_text = "Name"
 context_menu_enabled = false
 emoji_menu_enabled = false
@@ -120,6 +120,30 @@ offset_left = 201.0
 offset_top = 237.0
 offset_right = 241.0
 offset_bottom = 277.0
+scale = Vector2(0.679999, 0.679999)
+focus_mode = 0
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
+theme_override_icons/checked = ExtResource("5")
+theme_override_icons/unchecked = ExtResource("6")
+metadata/_edit_use_anchors_ = true
+
+[node name="Debug" type="CheckBox" parent="Node"]
+offset_left = 385.0
+offset_top = 237.0
+offset_right = 425.0
+offset_bottom = 277.0
+scale = Vector2(0.679999, 0.679999)
+focus_mode = 0
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
+theme_override_icons/checked = ExtResource("5")
+theme_override_icons/unchecked = ExtResource("6")
+metadata/_edit_use_anchors_ = true
+
+[node name="Vanilla" type="CheckBox" parent="Node"]
+offset_left = 385.0
+offset_top = 260.0
+offset_right = 425.0
+offset_bottom = 300.0
 scale = Vector2(0.679999, 0.679999)
 focus_mode = 0
 theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
@@ -207,6 +231,30 @@ stream = ExtResource("11")
 volume_db = -10.0
 mix_target = 2
 
+[node name="RichTextLabel5" type="RichTextLabel" parent="Node"]
+offset_left = 243.0
+offset_top = 241.0
+offset_right = 386.0
+offset_bottom = 259.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3")
+theme_override_font_sizes/normal_font_size = 12
+text = "D- Reduce Debug Info"
+fit_content = true
+scroll_active = false
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="Node"]
+offset_left = 243.0
+offset_top = 264.0
+offset_right = 350.0
+offset_bottom = 282.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3")
+theme_override_font_sizes/normal_font_size = 12
+text = "D- Vanilla Game"
+fit_content = true
+scroll_active = false
+
 [node name="RichTextLabel" type="RichTextLabel" parent="Node"]
 offset_left = 80.0
 offset_top = 264.0
@@ -248,6 +296,8 @@ scroll_active = false
 [connection signal="value_changed" from="Node/Master" to="Node" method="_on_master_value_changed"]
 [connection signal="value_changed" from="Node/Music" to="Node" method="_on_music_value_changed"]
 [connection signal="toggled" from="Node/Fullscreen" to="Node" method="_on_fullscreen_toggled"]
+[connection signal="toggled" from="Node/Debug" to="Node" method="_on_debug_toggled"]
+[connection signal="toggled" from="Node/Vanilla" to="Node" method="_on_vanilla_toggled"]
 [connection signal="button_down" from="Node/Save" to="Node" method="_on_save_button_down"]
 [connection signal="mouse_entered" from="Node/Save" to="Node" method="_on_save_mouse_entered"]
 [connection signal="pressed" from="Node/Save" to="Node" method="_on_save_pressed"]
