@@ -1,0 +1,41 @@
+[gd_resource type="ArrayMesh" load_steps=4 format=4 uid="uid://cc1lki6d1qrj7"]
+
+[ext_resource type="Texture2D" uid="uid://dgswxi4vw6yb6" path="res://pyramid_pyramid.png" id="1_lpgcn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kjh6l"]
+resource_name = "Material.001"
+cull_mode = 2
+albedo_texture = ExtResource("1_lpgcn")
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_lpc4g"]
+_surfaces = [{
+"aabb": AABB(-6.58209, -2.45343, -6.58209, 13.1642, 8.14182, 13.1642),
+"format": 34896613377,
+"index_count": 18,
+"index_data": PackedByteArray("AAABAAIAAQADAAIAAAADAAEAAwAEAAIABAAAAAIAAAAEAAMA"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 5,
+"vertex_data": PackedByteArray("//8AAAAAAAD//wAA//8AAP9/////fwAAAAAAAP//AAAAAAAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[resource]
+resource_name = "pyramid_Cone_001"
+_surfaces = [{
+"aabb": AABB(-6.58209, -2.45343, -6.58209, 13.1642, 8.14182, 13.1642),
+"attribute_data": PackedByteArray("oCLQyu3yUd1AfNUKn/Uw4e0dOs0ifogH1nlch16BCaXUhzSLVGeUk8Dr5dEGH9/Lw34kCd8hgs5K9PTarX0+Cw=="),
+"format": 34896613399,
+"index_count": 18,
+"index_data": PackedByteArray("AAABAAIAAwAEAAUABgAHAAgABgAJAAcACgALAAwADQAOAA8A"),
+"material": SubResource("StandardMaterial3D_kjh6l"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("//8AAAAAWBH//wAA//9YEf9/////f1gR//8AAP//3ZsAAAAA///dm/9/////f92b//8AAAAAPzYAAAAA//8/Nv//AAD//wwuAAAAAAAATzwAAAAA//86xAAAAAAAADrE/3////9/OsQAAAAAAACwG///AAAAALAb/3////9/sBvbtOSU27TklNu05JS7+65vu/uub7v7rm+8IXfDvCF3w4IoA9G/GH6xfZvVyn2b1cp9m9XK4fsKg+H7CoPh+wqD")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_lpc4g")

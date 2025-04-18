@@ -7,8 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://d8gnmkghjw4y" path="res://playernode.tscn" id="5"]
 [ext_resource type="PackedScene" uid="uid://bv6bdxeni35v8" path="res://fencircular.tscn" id="6_8hsab"]
 [ext_resource type="AudioStream" uid="uid://crsw0s6s6exhm" path="res://world2.wav" id="7"]
-[ext_resource type="PackedScene" uid="uid://bvs53nlflu6ht" path="res://pyramid.glb" id="8"]
 [ext_resource type="Texture2D" uid="uid://bgby244m6r4qs" path="res://palmtree.png" id="9"]
+[ext_resource type="ArrayMesh" uid="uid://cc1lki6d1qrj7" path="res://recovered_meshes/pyramid.tres" id="10_akolt"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_7b2gm"]
 panorama = ExtResource("2")
@@ -477,8 +477,9 @@ volume_db = -16.0
 autoplay = true
 bus = &"Music"
 
-[node name="pyramid" parent="." instance=ExtResource("8")]
+[node name="Pyramid3" type="MeshInstance3D" parent="."]
 transform = Transform3D(13, 0, 0, 0, 13, 0, 0, 0, 13, -73.7328, 1.93705, -328.777)
+mesh = ExtResource("10_akolt")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(-4.56502, 0, -12.1721, 0, 13, 0, 12.1721, 0, -4.56502, -134.117, 14.7473, -142.844)
@@ -516,8 +517,10 @@ modulate = Color(0.432624, 0.432624, 0.432624, 1)
 billboard = 2
 texture = ExtResource("9")
 
-[node name="pyramid3" parent="." instance=ExtResource("8")]
+[node name="Pyramid2" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.56502, 0, -12.1721, 0, 13, 0, 12.1721, 0, -4.56502, -255.433, 22.643, -131.533)
+mesh = ExtResource("10_akolt")
 
-[node name="pyramid2" parent="." instance=ExtResource("8")]
+[node name="Pyramid" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.48275, 0, -3.9881, 0, 6, 0, 3.9881, 0, 4.48275, 47.1684, 1.93705, -253.526)
+mesh = ExtResource("10_akolt")
