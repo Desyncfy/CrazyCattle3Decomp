@@ -12,3 +12,4 @@ class_name SaveData
 @export var fullscreen: bool
 @export var debug: int
 @export var vanilla: int
+@export var savedip: String

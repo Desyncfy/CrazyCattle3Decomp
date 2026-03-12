@@ -1,4 +1,4 @@
-[gd_resource type="FontFile" load_steps=2 format=4 uid="uid://bvhj2w2tommwx"]
+[gd_resource type="FontFile" format=4 uid="uid://bvhj2w2tommwx"]
 
 [sub_resource type="Image" id="Image_qgmbi"]
 data = {
@@ -14,9 +14,18 @@ antialiasing = 0
 subpixel_positioning = 0
 allow_system_fallback = false
 hinting = 0
-oversampling = 1.0
 fixed_size = 128
 fixed_size_scale_mode = 2
+oversampling = 1.0
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
 cache/0/128/0/ascent = 64.0
 cache/0/128/0/descent = 64.0
 cache/0/128/0/underline_position = 0.0

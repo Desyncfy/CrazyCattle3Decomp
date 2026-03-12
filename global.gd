@@ -19,3 +19,5 @@ var beatenlevels = 0
 # [reduced debug mode: <true/False>, vanilla game: <true/False> ]
 var debug = 0
 var vanilla = 0
+
+var savedip = ""

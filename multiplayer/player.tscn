@@ -1,0 +1,311 @@
+[gd_scene format=3 uid="uid://g8wleh43i0vc"]
+
+[ext_resource type="Script" uid="uid://bbs761k4xyts0" path="res://multiplayer/player.gd" id="1_37kq5"]
+[ext_resource type="PackedScene" uid="uid://bsqs54jqh5rv2" path="res://freecam.tscn" id="2_kft3g"]
+[ext_resource type="AudioStream" uid="uid://h2aydpeoumrq" path="res://crowd.wav" id="3_qwpag"]
+[ext_resource type="AudioStream" uid="uid://cw2w314pg1hqh" path="res://explode.wav" id="4_cgmpu"]
+[ext_resource type="Texture2D" uid="uid://h0ju080swc63" path="res://explosion-Sheet.png" id="5_wahky"]
+[ext_resource type="PackedScene" uid="uid://bse3g5nj340ty" path="res://sheep.tscn" id="6_pkkdh"]
+[ext_resource type="FontFile" uid="uid://dbj10iq6j0ahu" path="res://IMPACT.TTF" id="7_8omqk"]
+[ext_resource type="Script" uid="uid://dgryc8ccoduhh" path="res://rich_text_label_3.gd" id="8_v3y4o"]
+[ext_resource type="FontFile" uid="uid://cvvi6o8v4r7dh" path="res://ariblk.ttf" id="9_8fpsp"]
+[ext_resource type="Script" uid="uid://dry41lsev4vm1" path="res://rich_text_label_4.gd" id="10_lijjp"]
+[ext_resource type="Script" uid="uid://nvxrmwbkcv68" path="res://info.gd" id="11_gsh01"]
+[ext_resource type="AudioStream" uid="uid://dvtte0lvio6u0" path="res://baa.wav" id="12_fd8hn"]
+[ext_resource type="PackedScene" uid="uid://em7larvq8lrm" path="res://pause.tscn" id="13_cqi6w"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mckr2"]
+atlas = ExtResource("5_wahky")
+region = Rect2(0, 0, 200, 282)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cu6n2"]
+atlas = ExtResource("5_wahky")
+region = Rect2(200, 0, 200, 282)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idw84"]
+atlas = ExtResource("5_wahky")
+region = Rect2(400, 0, 200, 282)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jr3by"]
+atlas = ExtResource("5_wahky")
+region = Rect2(600, 0, 200, 282)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_otqp8"]
+atlas = ExtResource("5_wahky")
+region = Rect2(800, 0, 200, 282)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sgna4"]
+atlas = ExtResource("5_wahky")
+region = Rect2(1000, 0, 200, 282)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yrw10"]
+atlas = ExtResource("5_wahky")
+region = Rect2(1200, 0, 200, 282)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_swpcf"]
+atlas = ExtResource("5_wahky")
+region = Rect2(1400, 0, 200, 282)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2m4an"]
+atlas = ExtResource("5_wahky")
+region = Rect2(1600, 0, 200, 282)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5bcaq"]
+atlas = ExtResource("5_wahky")
+region = Rect2(1800, 0, 200, 282)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ig1cg"]
+atlas = ExtResource("5_wahky")
+region = Rect2(2000, 0, 200, 282)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ngw1e"]
+atlas = ExtResource("5_wahky")
+region = Rect2(2200, 0, 200, 282)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ecm48"]
+atlas = ExtResource("5_wahky")
+region = Rect2(2400, 0, 200, 282)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w5xjb"]
+atlas = ExtResource("5_wahky")
+region = Rect2(2600, 0, 200, 282)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogd5d"]
+atlas = ExtResource("5_wahky")
+region = Rect2(2800, 0, 200, 282)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yxr8k"]
+atlas = ExtResource("5_wahky")
+region = Rect2(3000, 0, 200, 282)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xcn1b"]
+atlas = ExtResource("5_wahky")
+region = Rect2(3200, 0, 200, 282)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ib8tu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mckr2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cu6n2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idw84")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jr3by")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_otqp8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sgna4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yrw10")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_swpcf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2m4an")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5bcaq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ig1cg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ngw1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ecm48")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w5xjb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ogd5d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yxr8k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xcn1b")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="GDScript" id="GDScript_btye0"]
+script/source = "extends Camera3D
+#var amt = 0.01
+#func _physics_process(delta):
+	#rotate_x(amt)
+	#rotate_y(amt*-1)
+	#rotate_z(amt)
+	#amt = amt * 1.0001
+"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_82ayb"]
+size = Vector3(1, 0.42281, 1.71842)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_03rjd"]
+
+[node name="Node3D" type="Node3D" unique_id=1264742067]
+
+[node name="VehicleBody3D" type="VehicleBody3D" parent="." unique_id=355447984]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 4.47035e-08, 0, 5.96046e-08)
+mass = 30.0
+script = ExtResource("1_37kq5")
+
+[node name="Node" type="Node" parent="VehicleBody3D" unique_id=2124328625]
+
+[node name="Camera3D3" parent="VehicleBody3D/Node" unique_id=2097335070 instance=ExtResource("2_kft3g")]
+transform = Transform3D(0.474721, -0.000639931, -0.880136, -0.00219674, 0.999996, -0.00191194, 0.880134, 0.00284107, 0.474717, 0, 2.03773, 0)
+current = false
+
+[node name="freecamlisten" type="AudioListener3D" parent="VehicleBody3D/Node/Camera3D3" unique_id=1611920189]
+
+[node name="Crowd" type="AudioStreamPlayer" parent="VehicleBody3D/Node/Camera3D3/freecamlisten" unique_id=699417246]
+stream = ExtResource("3_qwpag")
+volume_db = -0.56
+
+[node name="Explode" type="AudioStreamPlayer3D" parent="VehicleBody3D/Node/Camera3D3/freecamlisten" unique_id=1305732915]
+transform = Transform3D(0.474721, -0.00219674, 0.880134, -0.000639931, 0.999996, 0.00284107, -0.880136, -0.00191194, 0.474717, 0, 0, 0)
+stream = ExtResource("4_cgmpu")
+volume_db = -11.966
+pitch_scale = 1.46
+max_distance = 423.72
+panning_strength = 1.43
+doppler_tracking = 2
+
+[node name="explosion" type="AnimatedSprite3D" parent="VehicleBody3D/Node/Camera3D3/freecamlisten" unique_id=1446972299]
+transform = Transform3D(1.42416, -0.00659022, 2.6404, -0.00191979, 2.99999, 0.0085232, -2.64041, -0.00573581, 1.42415, 0.533612, -0.000719317, -0.98932)
+billboard = 1
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_ib8tu")
+
+[node name="Camera3D" type="Camera3D" parent="VehicleBody3D" unique_id=1838435723]
+transform = Transform3D(-1, 2.20669e-08, -1.38696e-07, -3.45601e-08, 0.918543, 0.395321, 1.36122e-07, 0.395321, -0.918543, 0, 2.55659, -2.08215)
+doppler_tracking = 2
+current = true
+fov = 110.0
+script = SubResource("GDScript_btye0")
+
+[node name="AudioListener3D" type="AudioListener3D" parent="VehicleBody3D/Camera3D" unique_id=1158991736]
+current = true
+
+[node name="sheep" parent="VehicleBody3D" unique_id=1325306387 instance=ExtResource("6_pkkdh")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, -0.5, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VehicleBody3D" unique_id=1240403377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.164907, -0.111954)
+shape = SubResource("BoxShape3D_82ayb")
+
+[node name="front_left_wheel" type="VehicleWheel3D" parent="VehicleBody3D" unique_id=748598556]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.674803, -0.205165, 0.747582)
+use_as_traction = true
+wheel_radius = 0.4
+wheel_friction_slip = 100.0
+suspension_stiffness = 50.0
+suspension_max_force = 60000.0
+damping_compression = 1.9
+damping_relaxation = 2.0
+
+[node name="back_left_wheel" type="VehicleWheel3D" parent="VehicleBody3D" unique_id=1917068048]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.674803, -0.205165, -0.921626)
+use_as_steering = true
+wheel_radius = 0.4
+wheel_friction_slip = 100.0
+suspension_stiffness = 50.0
+suspension_max_force = 60000.0
+damping_compression = 1.9
+damping_relaxation = 2.0
+
+[node name="front_right_wheel" type="VehicleWheel3D" parent="VehicleBody3D" unique_id=972645868]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.733593, -0.205165, 0.747582)
+use_as_traction = true
+wheel_radius = 0.4
+wheel_friction_slip = 100.0
+suspension_stiffness = 50.0
+suspension_max_force = 60000.0
+damping_compression = 1.9
+damping_relaxation = 2.0
+
+[node name="back_right_wheel" type="VehicleWheel3D" parent="VehicleBody3D" unique_id=1297119374]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.733593, -0.205165, -0.921626)
+use_as_steering = true
+wheel_radius = 0.4
+wheel_friction_slip = 100.0
+suspension_stiffness = 50.0
+suspension_max_force = 60000.0
+damping_compression = 1.9
+damping_relaxation = 2.0
+
+[node name="detect_dead" type="ShapeCast3D" parent="VehicleBody3D" unique_id=1080752751]
+transform = Transform3D(2.31998, 0, 0, 0, 1.91584, 0, 0, 0, 4.26813, 0.137185, 7.12678, 0.818188)
+shape = SubResource("BoxShape3D_03rjd")
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="VehicleBody3D/detect_dead" unique_id=1045124031]
+texture_filter = 4
+offset_left = 4.0
+offset_top = 413.0
+offset_right = 216.0
+offset_bottom = 439.0
+scale = Vector2(6.30823, 4.38483)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_8omqk")
+theme_override_font_sizes/normal_font_size = 12
+bbcode_enabled = true
+text = "22 remain."
+script = ExtResource("8_v3y4o")
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="VehicleBody3D/detect_dead" unique_id=747404831]
+texture_filter = 4
+offset_left = 4.0
+offset_top = 57.0
+offset_right = 247.0
+offset_bottom = 88.0
+scale = Vector2(2.4371, 2.50593)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("9_8fpsp")
+theme_override_font_sizes/normal_font_size = 12
+bbcode_enabled = true
+text = "No sheep have been eliminated."
+scroll_active = false
+scroll_following = true
+script = ExtResource("10_lijjp")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VehicleBody3D/detect_dead" unique_id=1823394336]
+texture_filter = 4
+offset_left = 5.0
+offset_top = -6.0
+offset_right = 251.0
+offset_bottom = 40.0
+scale = Vector2(2.73207, 2.05483)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("9_8fpsp")
+theme_override_font_sizes/normal_font_size = 12
+bbcode_enabled = true
+text = "CrazyCattle3D (Desync Version) 1.1.0-d"
+script = ExtResource("11_gsh01")
+
+[node name="Bleat" type="AudioStreamPlayer3D" parent="VehicleBody3D" unique_id=1742247722]
+stream = ExtResource("12_fd8hn")
+volume_db = -15.909
+max_db = 0.665
+max_distance = 31.03
+doppler_tracking = 2
+
+[node name="PauseMenu" parent="." unique_id=741946378 instance=ExtResource("13_cqi6w")]

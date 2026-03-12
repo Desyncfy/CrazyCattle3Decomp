@@ -1,9 +1,14 @@
 res://default_bus_layout.tres
-res://options.tscn
 res://recovered_meshes/sheep.tres
 res://numbers/numbers.tres
 res://recovered_meshes/fencircular.tres
 res://recovered_meshes/pyramid.tres
 res://recovered_meshes/rock.tres
 res://recovered_meshes/stonehouse.tres
-res://server/server.gd
+res://multiplayer/map_ir.tscn
+res://multiplayer/multiplayer.gd
+res://multiplayer/menu.gd
+res://multiplayer/player.tscn
+res://rich_text_label_3.gd
+res://rich_text_label_4.gd
+res://multiplayer/player.gd

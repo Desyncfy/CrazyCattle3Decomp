@@ -12,6 +12,7 @@ func initialise_game():
 		data.beatenlevels = 0
 		data.debug = 0
 		data.vanilla = 0
+		data.savedip = ""
 		ResourceSaver.save(data, "user://savefile.tres")
 		print("Savefile not found; Initialising")
 
@@ -25,6 +26,7 @@ func loadData():
 	Global.beatenlevels = data.beatenlevels
 	Global.debug = data.debug
 	Global.vanilla = data.vanilla
+	Global.savedip = data.savedip
 	AudioServer.set_bus_volume_db(0, data.mastervol)
 	AudioServer.set_bus_volume_db(1, data.musicvol)
 	if data.fullscreen == true:
@@ -85,3 +87,19 @@ func _on_quit_button_up() -> void :
 
 func _on_baa_finished() -> void :
 	get_tree().quit()
+
+
+func _on_mult_button_down() -> void:
+	uiPress()
+
+
+func _on_mult_button_up() -> void:
+	uiRelease()
+
+
+func _on_mult_mouse_entered() -> void:
+	uiHover()
+
+
+func _on_mult_pressed() -> void:
+	get_tree().change_scene_to_file("res://multiplayer/multiplayer.tscn")

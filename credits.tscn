@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://crf36lax3jemg"]
+[gd_scene load_steps=12 format=3 uid="uid://crf36lax3jemg"]
 
 [ext_resource type="Script" uid="uid://br5jbehbrubrv" path="res://credits.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://b81ijn2b48oth" path="res://credits.png" id="2"]
 [ext_resource type="AudioStream" uid="uid://g6mkejhefg1f" path="res://credits.wav" id="3"]
+[ext_resource type="Theme" uid="uid://dqnmg0lf7duwl" path="res://menu.tres" id="3_h30m1"]
 [ext_resource type="FontFile" uid="uid://cvvi6o8v4r7dh" path="res://ariblk.ttf" id="4"]
 [ext_resource type="AudioStream" uid="uid://daax0sm4wiefg" path="res://uihover.wav" id="5"]
 [ext_resource type="AudioStream" uid="uid://dh6pm2jo1420s" path="res://uipress.wav" id="6"]
@@ -45,23 +46,23 @@ offset_right = 147.0
 offset_bottom = 466.0
 scale = Vector2(1.20892, 1.20892)
 theme = SubResource("Theme_lnt0k")
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("4")
 theme_override_font_sizes/font_size = 12
-theme_override_styles/focus = SubResource("StyleBoxEmpty_604bw")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_604bw")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_604bw")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_604bw")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_604bw")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_604bw")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_604bw")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_604bw")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_604bw")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_604bw")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_604bw")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_604bw")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_604bw")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_604bw")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_604bw")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_604bw")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_604bw")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_604bw")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_604bw")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_604bw")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_604bw")
 text = "Back to Trophy Room"
 alignment = 0
 metadata/_edit_use_anchors_ = true
@@ -81,6 +82,20 @@ mix_target = 2
 stream = ExtResource("7")
 volume_db = -10.0
 mix_target = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 345.0
+offset_right = 640.0
+offset_bottom = 46.0
+grow_horizontal = 0
+theme = ExtResource("3_h30m1")
+text = "Multiplayer and stuff by Desync :)
+https://www.desyncd.xyz/cattle3d"
+fit_content = true
+scroll_active = false
 
 [connection signal="button_down" from="Credits2/return" to="." method="_on_return_button_down"]
 [connection signal="button_up" from="Credits2/return" to="." method="_on_return_button_up"]

@@ -1,4 +1,4 @@
-[gd_resource type="ArrayMesh" load_steps=4 format=4 uid="uid://b82yvsjixd8jq"]
+[gd_resource type="ArrayMesh" format=4 uid="uid://b82yvsjixd8jq"]
 
 [ext_resource type="Texture2D" uid="uid://cy88tnl4bbvmt" path="res://sheep_generated-image-348261704.jpg" id="1_uja2r"]
 

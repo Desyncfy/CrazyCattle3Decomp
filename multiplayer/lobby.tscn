@@ -1,0 +1,85 @@
+[gd_scene load_steps=11 format=3 uid="uid://dk1oi4nmntnvw"]
+
+[ext_resource type="Texture2D" uid="uid://bhbikn4ir2252" path="res://multiplayer/multiplayer.png" id="1_a1okr"]
+[ext_resource type="Script" uid="uid://cryom7jbirfo2" path="res://multiplayer/lobby.gd" id="2_fht46"]
+[ext_resource type="AudioStream" uid="uid://dvtte0lvio6u0" path="res://baa.wav" id="3_kodgx"]
+[ext_resource type="AudioStream" uid="uid://daax0sm4wiefg" path="res://uihover.wav" id="4_73x7e"]
+[ext_resource type="AudioStream" uid="uid://dh6pm2jo1420s" path="res://uipress.wav" id="5_gvqv4"]
+[ext_resource type="AudioStream" uid="uid://chbwgwjhw1tmf" path="res://uirelease.wav" id="6_g6fdg"]
+[ext_resource type="FontFile" uid="uid://cvvi6o8v4r7dh" path="res://ariblk.ttf" id="7_mny3x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kls10"]
+
+[sub_resource type="Theme" id="Theme_kvucw"]
+default_font = ExtResource("7_mny3x")
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
+Button/colors/font_focus_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(0, 0.545924, 0.934453, 1)
+Button/colors/font_hover_pressed_color = Color(0.0536234, 0, 0.872918, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(0.160392, 0.185003, 1, 1)
+Button/font_sizes/font_size = 12
+Button/fonts/font = ExtResource("7_mny3x")
+Panel/styles/panel = SubResource("StyleBoxEmpty_kls10")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_83gp4"]
+
+[node name="Lobby" type="Sprite2D"]
+position = Vector2(320, 240)
+texture = ExtResource("1_a1okr")
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("2_fht46")
+
+[node name="Baa" type="AudioStreamPlayer" parent="Node"]
+stream = ExtResource("3_kodgx")
+volume_db = -10.0
+
+[node name="Uihover" type="AudioStreamPlayer" parent="Node"]
+stream = ExtResource("4_73x7e")
+volume_db = -10.0
+mix_target = 2
+max_polyphony = 6
+
+[node name="Uipress" type="AudioStreamPlayer" parent="Node"]
+stream = ExtResource("5_gvqv4")
+volume_db = -10.0
+mix_target = 2
+
+[node name="Uirelease" type="AudioStreamPlayer" parent="Node"]
+stream = ExtResource("6_g6fdg")
+volume_db = -10.0
+mix_target = 2
+
+[node name="Back" type="Button" parent="Node"]
+texture_filter = 2
+offset_left = 200.0
+offset_top = 384.0
+offset_right = 280.0
+offset_bottom = 402.0
+scale = Vector2(1.52, 1.52)
+focus_mode = 0
+theme = SubResource("Theme_kvucw")
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("7_mny3x")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxEmpty_83gp4")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_83gp4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_83gp4")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_83gp4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_83gp4")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_83gp4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_83gp4")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_83gp4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_83gp4")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_83gp4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_83gp4")
+text = "Back"
+alignment = 0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="button_down" from="Node/Back" to="Node" method="_on_back_button_down"]
+[connection signal="button_up" from="Node/Back" to="Node" method="_on_back_button_up"]
+[connection signal="focus_entered" from="Node/Back" to="Node" method="_on_back_focus_entered"]
+[connection signal="pressed" from="Node/Back" to="Node" method="_on_back_pressed"]

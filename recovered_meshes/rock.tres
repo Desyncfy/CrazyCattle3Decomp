@@ -1,4 +1,4 @@
-[gd_resource type="ArrayMesh" load_steps=4 format=4 uid="uid://bj5bm5qyvvrbo"]
+[gd_resource type="ArrayMesh" format=4 uid="uid://bj5bm5qyvvrbo"]
 
 [ext_resource type="Texture2D" uid="uid://daisbb8pydirt" path="res://rock_rock.png" id="1_bbjmr"]
 

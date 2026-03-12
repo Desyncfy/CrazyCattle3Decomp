@@ -40,6 +40,7 @@ func _on_save_pressed() -> void :
 	data.beatenlevels = Global.beatenlevels
 	data.debug = Global.debug
 	data.vanilla = Global.vanilla
+	data.savedip = Global.savedip
 	ResourceSaver.save(data, "user://savefile.tres")
 	print("Saved")
 	get_tree().change_scene_to_file("res://menu.tscn")

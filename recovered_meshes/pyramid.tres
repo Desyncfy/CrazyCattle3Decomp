@@ -1,4 +1,4 @@
-[gd_resource type="ArrayMesh" load_steps=4 format=4 uid="uid://cc1lki6d1qrj7"]
+[gd_resource type="ArrayMesh" format=4 uid="uid://cc1lki6d1qrj7"]
 
 [ext_resource type="Texture2D" uid="uid://dgswxi4vw6yb6" path="res://pyramid_pyramid.png" id="1_lpgcn"]
 
