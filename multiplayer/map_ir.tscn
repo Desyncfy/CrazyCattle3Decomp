@@ -7,6 +7,8 @@
 [ext_resource type="AudioStream" uid="uid://e5d6j8lwu6du" path="res://world1.wav" id="3_52hlf"]
 [ext_resource type="Texture2D" uid="uid://d2qd7reslk174" path="res://crazy_tuft.png" id="4_l3asd"]
 [ext_resource type="PackedScene" uid="uid://g8wleh43i0vc" path="res://multiplayer/player.tscn" id="7_5ppe3"]
+[ext_resource type="ArrayMesh" uid="uid://cndtjofvsh82d" path="res://recovered_meshes/stonehouse.tres" id="8_ddmmt"]
+[ext_resource type="ArrayMesh" uid="uid://bj5bm5qyvvrbo" path="res://recovered_meshes/rock.tres" id="9_0wsjw"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_52hlf"]
 panorama = ExtResource("1_y8jch")
@@ -3375,4 +3377,22 @@ texture = ExtResource("4_l3asd")
 
 [node name="Node3D" parent="." unique_id=1264742067 instance=ExtResource("7_5ppe3")]
 
+[node name="Stonehouse" type="MeshInstance3D" parent="." unique_id=897852119]
+transform = Transform3D(6.09384, 0, 7.92875, 0, 10, 0, -7.92875, 0, 6.09384, -210.954, 7.65847, -170.449)
+mesh = ExtResource("8_ddmmt")
+
+[node name="Rock" type="MeshInstance3D" parent="." unique_id=616380430]
+transform = Transform3D(5.74389, 0, 0, 0, 5.65543, 0, 0, 0, 6.71618, -147.734, -1.59757, -156.331)
+mesh = ExtResource("9_0wsjw")
+
+[node name="Rock2" type="MeshInstance3D" parent="." unique_id=1741932498]
+transform = Transform3D(-0.259258, 0, -6.70934, 0, 5.65543, 0, 5.73804, 0, -0.303144, -198.189, -1.09742, -126.425)
+mesh = ExtResource("9_0wsjw")
+skeleton = NodePath("")
+
+[node name="tps" type="Timer" parent="." unique_id=42119958]
+wait_time = 0.05
+autostart = true
+
 [connection signal="request_completed" from="HTTPRequest" to="." method="_on_http_request_request_completed"]
+[connection signal="timeout" from="tps" to="." method="_on_tps_timeout"]

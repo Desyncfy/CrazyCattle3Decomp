@@ -16,5 +16,12 @@ func _on_http_request_request_completed(_result: int, _response_code: int, _head
 	var sheep_postitions = JSON.parse_string(body.get_string_from_utf8())
 	for i in sheep_postitions:
 		var new_sheep = sheep.instantiate()
-		add_child(Camera3D.new())
+		add_child(new_sheep)
 		new_sheep.global_position = Vector3(sheep_postitions[i][0], sheep_postitions[i][1], sheep_postitions[i][2])
+		new_sheep.rotation = Vector3(sheep_postitions[i][3], sheep_postitions[i][4], sheep_postitions[i][5])
+
+
+func _on_tps_timeout() -> void:
+	for i in get_tree().get_nodes_in_group("sheep"):
+		i.free()
+	$HTTPRequest.request("http://" + Global.savedip + ":42024/npcs")

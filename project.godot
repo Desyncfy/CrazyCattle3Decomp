@@ -24,6 +24,10 @@ config/icon="uid://dx11833n71gqk"
 config/windows_native_icon="res://crazyicon.ico"
 boot_splash/minimum_display_time=3000
 
+[audio]
+
+buses/default_bus_layout="uid://dedqerrdssgio"
+
 [autoload]
 
 Global="*res://global.gd"
@@ -37,6 +41,10 @@ window/stretch/aspect="ignore"
 window/vsync/vsync_mode=0
 mouse_cursor/custom_image="uid://0fls4gdmimmo"
 mouse_cursor/custom_image_hotspot=Vector2(16, 0)
+
+[global_group]
+
+sheep="I'm a sheeeeep"
 
 [input]
 
